@@ -8,7 +8,7 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 set(CMAKE_CXX_STANDARD 23)
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp GameCharacter.cpp GameCharacter.h Observer.h Subject.h Display.h)
 add_executable(${PROJECT_NAME} main.cpp ${SOURCE_FILES})
 
 target_link_libraries(${PROJECT_NAME} PRIVATE sfml-graphics sfml-window sfml-system)
